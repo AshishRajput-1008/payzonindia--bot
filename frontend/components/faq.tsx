@@ -132,7 +132,7 @@ const PayzonIndiaFAQ: React.FC = () => {
   const [language, setLanguage] = useState("en-US");
   const [speechSupported, setSpeechSupported] = useState(true);
   const [avatarState, setAvatarState] = useState<"idle" | "typing" | "speaking">("idle");
-  const [backendUrl] = useState("http://localhost:5000");
+  const [backendUrl] = useState("https://slategrey-lion-396996.hostingersite.com");
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
