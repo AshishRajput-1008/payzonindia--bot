@@ -1,0 +1,67 @@
+# =============================
+#      Global Settings
+# =============================
+.DS_Store
+Thumbs.db
+*.log
+logs/
+*.tmp
+*.temp
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# =============================
+#       Node.js (Backend)
+# =============================
+backend/node_modules/
+backend/package-lock.json
+backend/dist/
+backend/build/
+
+# Runtime files
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+
+# Uploads
+backend/uploads/
+
+# Ignore large files
+backend/*.zip
+backend/*.tar
+backend/*.tar.gz
+
+
+# =============================
+#       React (Frontend)
+# =============================
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.env
+frontend/.cache/
+
+# Log files
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Production assets
+frontend/*.zip
+frontend/*.tar
+frontend/*.tar.gz
+
+# Generated files
+frontend/.parcel-cache/
+frontend/.next/
+frontend/out/
+frontend/.eslintcache
