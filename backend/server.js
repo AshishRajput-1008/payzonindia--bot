@@ -67,7 +67,14 @@ app.post("/chat", async (req, res) => {
   }
 });
 
+// ✅ Root health check (VERY IMPORTANT for Hostinger)
+app.get("/", (req, res) => {
+  res.status(200).json({ status: "Backend is running" });
+});
+
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () =>
-  console.log(`Backend running on port ${PORT}`)
-);
+
+// ✅ MUST bind to 0.0.0.0 on Hostinger
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Backend running on port ${PORT}`);
+});
